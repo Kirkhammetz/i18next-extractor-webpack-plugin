@@ -27,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/Kirkhammetz/i18next-extractor-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/Kirkhammetz/i18next-extractor-webpack-plugin#readme"
+  "homepage": "https://github.com/Kirkhammetz/i18next-extractor-webpack-plugin#readme",
+  "version": "1.0.0-rc.1"
 }
