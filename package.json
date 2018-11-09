@@ -28,7 +28,7 @@
     "url": "https://github.com/Kirkhammetz/i18next-extractor-webpack-plugin/issues"
   },
   "homepage": "https://github.com/Kirkhammetz/i18next-extractor-webpack-plugin#readme",
-  "version": "1.0.0-rc.3",
+  "version": "1.0.0-rc.4",
   "dependencies": {
     "i18next-scanner": "^2.6.6",
     "vinyl-fs": "^3.0.3"
