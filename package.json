@@ -1,0 +1,32 @@
+{
+  "name": "i18next-extractor-webpack-plugin",
+  "version": "1.0.0-rc.1",
+  "description": "Extract translation (i18next/custom) keys from source codes and parse into resource files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Kirkhammetz/i18next-extractor-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "i18next",
+    "i18n",
+    "localization",
+    "javascript",
+    "react",
+    "node",
+    "bundle",
+    "internationalization",
+    "json",
+    "parsing"
+  ],
+  "author": "Simone Corsi <simonecorsi.dev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kirkhammetz/i18next-extractor-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/Kirkhammetz/i18next-extractor-webpack-plugin#readme"
+}
