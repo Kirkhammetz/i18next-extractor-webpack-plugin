@@ -1,6 +1,5 @@
 {
   "name": "i18next-extractor-webpack-plugin",
-  "version": "1.0.0-rc.1",
   "description": "Extract translation (i18next/custom) keys from source codes and parse into resource files",
   "main": "index.js",
   "scripts": {
