@@ -30,8 +30,8 @@
   "homepage": "https://github.com/Kirkhammetz/i18next-extractor-webpack-plugin#readme",
   "version": "1.0.0-rc.5",
   "dependencies": {
-    "i18next-scanner": "^2.6.6",
-    "vinyl-fs": "^3.0.3"
+    "i18next-scanner": "2.6.6",
+    "vinyl-fs": "2.4.4"
   },
   "devDependencies": {
     "@types/node": "^10.12.3",
