@@ -1,6 +1,12 @@
 import scanner from 'i18next-scanner';
 import vfs from 'vinyl-fs';
 
+// interface Options {
+//   include?: string;
+//   exclude?: string;
+//   dest?: string;
+// }
+
 export default class I18NextExtractorPlugin {
   options = {
     include: null,
@@ -31,6 +37,20 @@ export default class I18NextExtractorPlugin {
 
   apply(compiler: any) {
     const { options } = this;
+    if (!compiler) {
+      console.error(
+        this.pluginName,
+        "apply() didn't get any compiler parameter",
+        compiler
+      );
+    }
+    if (!compiler.hooks) {
+      console.error(
+        this.pluginName,
+        'apply(compiler) hook not found',
+        compiler
+      );
+    }
     compiler.hooks.emit.tapAsync(
       this.pluginName,
       async (compilation: any, callback: any) => {

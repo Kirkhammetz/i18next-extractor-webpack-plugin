@@ -13,6 +13,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const i18next_scanner_1 = __importDefault(require("i18next-scanner"));
 const vinyl_fs_1 = __importDefault(require("vinyl-fs"));
+// interface Options {
+//   include?: string;
+//   exclude?: string;
+//   dest?: string;
+// }
 class I18NextExtractorPlugin {
     constructor(options = {}) {
         this.options = {
@@ -36,6 +41,12 @@ class I18NextExtractorPlugin {
     }
     apply(compiler) {
         const { options } = this;
+        if (!compiler) {
+            console.error(this.pluginName, "apply() didn't get any compiler parameter", compiler);
+        }
+        if (!compiler.hooks) {
+            console.error(this.pluginName, 'apply(compiler) hook not found', compiler);
+        }
         compiler.hooks.emit.tapAsync(this.pluginName, (compilation, callback) => __awaiter(this, void 0, void 0, function* () {
             let sources = compilation.modules
                 .filter((module) => {
